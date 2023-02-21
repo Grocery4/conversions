@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: auto;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 10px;
+
+}
+
+.wrapper > * {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: 10px;
+}
+
+header, .main, footer {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+
+    header .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .contacts {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .navigate {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        list-style: none;
+        color: blue;
+    }
+
+    header ul li {
+        margin-inline: 20px;
+    }
+
+    .art-container {
+        padding: 10px;
+    }
+
+    .conv1, .conv2, .conv3 {
+        display: flex;
+        margin-block: 50px;
+        
+    }
+
+    .p-art {
+        padding: 20px;
+    }
+
+    .square {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+    }
+
+
+
+    footer .contacts {
+        display: flex;
+    }
+
+    footer ul li {
+        margin-inline: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1023px) {
+    header .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .contacts {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .navigate {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        list-style: none;
+        color: blue;
+    }
+
+    header ul li {
+        margin-inline: 20px;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 50px;
+    }
+
+
+    .conv1, .conv2, .conv3 {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        margin-block: 50px;
+    }
+
+    .p-art{
+        padding: 20px;
+        font-size: 1.25em;        
+    }
+    .square {
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+    }
+
+
+
+    footer .contacts {
+        display: flex;
+    }
+
+    footer ul li {
+        margin-inline: 20px;
+    }
+    
+}
+
