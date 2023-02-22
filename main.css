@@ -1,151 +1,102 @@
 html, body {
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
-.wrapper {
-    height: 100vh;
-    width: auto;
+body {
+font-size: 100%;
+}
+
+.main-container {
+height: 100vh;
+}
+
+.page {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+.home{
     display: flex;
-
     flex-direction: column;
-    justify-content: space-between;
-
-    margin: 10px;
-
-}
-
-.wrapper > * {
-    border: 1px solid black;
-    border-radius: 10px;
-
-    margin: 10px;
-}
-
-header, .main, footer {
-    padding: 20px;
-}
-
-
-@media screen and (min-width: 1024px) 
-{
-
-    header .title {
-        display: flex;
-        justify-content: center;
-    }
-
-    header .contacts {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    header .navigate {
-        display: flex;
-        justify-content: center;
-    }
-
-    ul li {
-        list-style: none;
-        color: blue;
-    }
-
-    header ul li {
-        margin-inline: 20px;
-    }
-
-    .art-container {
-        padding: 10px;
-    }
-
-    .conv1, .conv2, .conv3 {
-        display: flex;
-        margin-block: 50px;
-        
-    }
-
-    .p-art {
-        padding: 20px;
-    }
-
-    .square {
-        width: 300px;
-        height: 300px;
-        border: 1px solid black;
-    }
-
-
-
-    footer .contacts {
-        display: flex;
-    }
-
-    footer ul li {
-        margin-inline: 20px;
-    }
+    justify-content: center;
     
+    background-color: #242325;
+    color: #FFFCF7;
 }
 
-@media screen and (max-width: 1023px) {
-    header .title {
-        display: flex;
-        justify-content: center;
-    }
-
-    header .contacts {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    header .navigate {
-        display: flex;
-        justify-content: center;
-    }
-
-    ul li {
-        list-style: none;
-        color: blue;
-    }
-
-    header ul li {
-        margin-inline: 20px;
-    }
-
-    .main {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        padding: 50px;
-    }
-
-
-    .conv1, .conv2, .conv3 {
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        margin-block: 50px;
-    }
-
-    .p-art{
-        padding: 20px;
-        font-size: 1.25em;        
-    }
-    .square {
-        width: 250px;
-        height: 250px;
-        border: 1px solid black;
-    }
-
-
-
-    footer .contacts {
-        display: flex;
-    }
-
-    footer ul li {
-        margin-inline: 20px;
-    }
-    
+.home .content p {
+    text-align: end;
+    font-size: 1.25em;
 }
 
+.home .content {
+    align-self: center;
+    width: 400px;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.contacts {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 1.5em;
+}
+
+.contacts a {
+    background-color: #242325;
+    color: #FFFCF7;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+
+    flex: 1;
+}
+
+.contacts :hover {
+    background-color: #343336;
+}
+
+
+.c1 {
+    background-color: #3DDC97;
+}
+
+.c2 {
+    background-color: #C1666B;
+}
+
+.c3 {
+    background-color: #A1B5D8;
+}
+
+.conv {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.converter {
+    background-color: whitesmoke;
+    height: 80%;
+    width: 90%;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.convname{
+    text-align: center;
+}
