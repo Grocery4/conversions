@@ -10,7 +10,14 @@
 <body>
     
     <div class="main-container">
-        <div class="page home">
+
+        <header>
+            <a href="#home">Home Page</a>
+            <a href="#c1">Converter 1</a>
+            <a href="#c2">Converter 2</a>
+            <a href="#c3">Converter 3</a>
+        </header>
+        <div class="page home" id="home">
             
             <div class="content">
                 <div class="title"><h1>Converter tool</h1></div>
@@ -26,16 +33,35 @@
             </div>
 
         </div>
-        <div class="page conv c1">
+        <div class="page conv c1" id="c1">
         
             <div class="converter">
                 <div class="convname"><h1>Type1</h1></div>
+                
+            <div class="in">
+
+                <form method="post">
+                    <label for="in">Insert value to convert:</label>
+                    <input type="number" id="in">
+                    <br>
+                    <button type="button" onclick="smoothScroll()">Submit</button>
+                    <p id="v1"></p>
+                    <p id="v2"></p>
+                    <p id="v3"></p>
+                </form>
+            
             </div>
-        
+
+            <div class="out">
+                
+            </div>
+
+            </div>
+            
         </div>
         
-        <div class="page conv c2">Type2</div>
-        <div class="page conv c3">Type3</div>
+        <div class="page conv c2" id="c2">Type2</div>
+        <div class="page conv c3" id="c3">Type3</div>
 
     </div>
 
